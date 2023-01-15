@@ -1,13 +1,20 @@
 import { Flex } from '@twilio-paste/flex';
 import { AllHumans } from './AllHumans';
 import { AllTasks } from './AllTasks';
+import { StarWars } from './StarWars';
 
 const Application = () => {
   return (
-    <Flex margin="auto" width="600">
-      <AllHumans />
-      <AllTasks />
-    </Flex>
+    <div>
+      <Flex margin="auto" width="600">
+        <AllHumans />
+        <AllTasks />
+      </Flex>
+      <hr />
+      <Flex margin="auto" width="600">
+        <StarWars/>
+      </Flex>
+    </div>
   );
 };
 
